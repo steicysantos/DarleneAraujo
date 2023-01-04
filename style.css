@@ -117,6 +117,25 @@ body {
     --color5: #997E75;
 }
 
+.whatsapp-link{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #25d366;
+    color: var(--color1);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp{
+    margin-top: 16px;
+}
+
 header {
     height: 100px;
     width: 100%;
@@ -161,7 +180,7 @@ header {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     padding: 0 220px;
-    height: 80%;
+    height: 90%;
     width: 100%;
     background-color: var(--color4);
     align-items: flex-end;
@@ -389,5 +408,272 @@ header {
     transform: scale(1.03);
 }
 
+/* Footer */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .footer-distributed{
+    background: var(--color4);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 25px 50px;
+    margin-top: 5rem;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+    width: 40%;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
 
 
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-distributed .footer-company-name{
+    color:  #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+    width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+    background-color:  var(--color5);
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+    color:  var(--color1);
+    text-decoration: none;;
+  }
+  
+  /* .footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+   */
+  /* .footer-distributed .footer-links .link-1:before {
+    content: none;
+  } */
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .footer-distributed .footer-icons{
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+  
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 880px) {
+  
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+  
+  }
+
+.review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #000005 0%, #000042 50%, #000 100%);
+}
+
+.carrousel{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: none;
+}
+
+.carrousel-item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow{
+    border: solid #000;
+    border-width: 0 6px 6px 0;
+    display: flex;
+    padding: 15px;
+}
+
+.prev{
+    top: 50%;
+    left: 30px;
+    position: absolute;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.next{
+    top: 50%;
+    left: 30px;
+    position: absolute;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^="item"]{
+    display: none;
+}
+
+.item-1{
+    z-index: 2;
+    opacity: 1;
+    background: url("assets/Courses/1.png");
+    background-size: cover;
+}
+.item-2{
+    background: url("assets/Courses/2.png");
+    background-size: cover;
+}
+.item-3{
+    background: url("assets/Courses/3.png");
+    background-size: cover;
+}
+
+*:target~.item-1{
+    opacity: 1;
+}
+
+#item-2:target~.item-2,
+#item-3:target~.item-3{
+    z-index: 3;
+    opacity: 1;
+}
