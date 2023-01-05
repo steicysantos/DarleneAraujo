@@ -261,6 +261,11 @@ header {
     border: none;
 }
 
+.btn-banner:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
 .container-cards{
 	display: flex;
 	flex-direction: row;
@@ -279,7 +284,7 @@ header {
 
 .course-selection > h1{
     font-family: 'Newsreader', serif;
-	font-size: 100px;
+	font-size: 70px;
     font-weight: 300;
 	color: var(--color5);
 	padding: 5rem;
@@ -342,35 +347,51 @@ header {
 
 /* SOBRE MIM */
 
+
 .aboutme{
-    width: 75%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto; 
-    display: flex;
-    flex-direction: row;
-    margin-top: 5rem;
-}
-
-.aboutme .imagem img{
-    height: 70%;
-}
-
-.aboutme .text{
+    width: 100%;
     font-family: 'Monstserrat', sans-serif;
-    padding-left: 3rem;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
-.aboutme .text > h2{
-	font-size: 32px;
-	color: var(--color5);
-    font-weight: 700;
-    margin-bottom: 1rem;
+.aboutme img{
+    height: 100%;
+    width: 420px;
 }
 
-.aboutme .text > h1{
-	font-size: 16.55px;
-	color: rgb(102, 102, 102);
+.about-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: var(--color5);
+    font-family: 'Newsreader', serif;
+	font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    word-spacing: 2rem;
+    margin-top: 0;
+}
+
+.about-text p{
+    font-family: 'Monstserrat', sans-serif;
+    color: var(--color5);
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.5px;
 }
 
 /* GALERIA */
@@ -408,11 +429,13 @@ header {
     transform: scale(1.03);
 }
 
-/* Footer */
+.video{
+    width: 60%; 
+    margin: 0 auto;
+    margin-top: 5rem;
+}
 
-* {
-    font-family: 'Montserrat', sans-serif;
-  }
+/* Footer */
   
   .footer-distributed{
     background: var(--color4);
@@ -420,7 +443,7 @@ header {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px sans-serif;
+    font: bold 16px 'Montserrat', sans-serif;
     padding: 25px 50px;
     margin-top: 5rem;
   }
@@ -442,7 +465,7 @@ header {
   
   .footer-distributed h3{
     color:  #ffffff;
-    font: normal 36px 'Open Sans', cursive;
+    font: normal 36px 'Montserrat', sans-serif;
     margin: 0;
   }
   
@@ -553,13 +576,14 @@ header {
   .footer-distributed .footer-company-about span{
     display: block;
     color:  #ffffff;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
-    text-transform: uppercase;
+    text-align: center;
   }
   
   .footer-distributed .footer-icons{
+    align-items: center;
     margin-top: 25px;
   }
   
@@ -577,6 +601,8 @@ header {
   
     margin-right: 3px;
     margin-bottom: 5px;
+
+    
   }
   
   /* If you don't want the footer to be responsive, remove these media queries */
@@ -601,16 +627,16 @@ header {
   
   }
 
-.review{
+/* .review{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
     background-image: linear-gradient(45deg, #000005 0%, #000042 50%, #000 100%);
-}
+} */
 
-.carrousel{
+/* .carrousel{
     width: 400px;
     height: 400px;
     position: relative;
@@ -676,4 +702,88 @@ header {
 #item-3:target~.item-3{
     z-index: 3;
     opacity: 1;
+} */
+
+.all-review{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: hidden;
+}
+
+
+.review{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: hidden;
+}
+.cards-review{
+	width: 250px;
+	height: 400px;
+	background-color: var(--color1);
+	border-left:0.5px solid #f7f7f7;
+	border-radius: 25px;
+	margin: 3rem;
+	box-shadow: rgba(46, 46, 46, 0.089) 0px 0px 10px 3px;
+	z-index: 0;
+}
+
+.all-review > h1{
+	text-transform: uppercase;
+}
+
+.cards-review-top{
+	width: 100%;
+	height: 25%;
+	background-color: var(--color2);
+	border-radius: 25px 25px 0 0;
+	z-index: 1;
+}
+
+.cards-review .avatar > img{
+	display: flex;
+	margin: auto;
+	margin-top: -4rem;
+	width: 50%;
+}
+
+.cards-review .stars > img{
+	display: flex;
+	margin: auto;
+	margin-top: 1rem;
+	width: 35%;
+}
+
+.cards-review > h1{
+	margin: 1rem;
+	font-family: 'Fredoka One', sans-serif;
+	font-size: 18px;
+	color: var(--color6);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.cards-review > h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20;
+	font-weight: 300;
+	color: var(--color6);
+	text-align: center;
+	padding: 0 0.8rem ;
+}
+
+.all-review > h1{
+	font-family: 'Grandstander', sans-serif;
+	font-size: 100px;
+	color: var(--color5);
+	padding-top: 5rem;
 }
