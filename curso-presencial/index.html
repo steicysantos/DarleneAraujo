@@ -5,53 +5,133 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="assets/icone.svg" />
-  <script src="script.js"></script>
-  <title>Document</title>
+  <title>Cursos Presenciais - Darlene Araújo</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!-- Script -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5541991115747" target="_blank">
     <i class="fa fa-whatsapp"></i>
   </a>
-
   <header>
-    <div class="logo">
-      <img src="assets/logo1.svg" alt="">
+    <div class="container-header">
+      <div class="logo">
+        <img src="assets/logo1.svg" alt="">
+      </div>
     </div>
   </header>
-  <div class="banner">
-    <h1>Darlene<br>Darlene<br>Darlene<br>Darlene<br>Darlene<br>Darlene<br>Darlene<br>Darlene</h1>
+
+
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+
+      <div class="slide first">
+        <img src="assets/Banner.png" alt="img1">
+      </div>
+      <div class="slide ">
+        <img src="assets/2.png" alt="img2">
+      </div>
+      <div class="slide ">
+        <img src="assets/3.png" alt="img3">
+      </div>
+
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+      </div>
+
+    </div>
+
+    <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+    </div>
   </div>
-  <!-- <h1>
-    <span class="stat-count">10000</span>
-  </h1>
   
-  <script>
-    $(function() {
-    function count($this){
-        var current = parseInt($this.html(), 10);
-        current = current + 50; /* Where 50 is increment */
+  <div class="all-content">
+    <div class="content-left">
+      <img src="assets/Imagem - Conteúdo dos cursos.png" alt="">
+    </div>
+    <div class="content-right">
+      <div class="accordion">
+        <div class="contentBx">
+          <div class="label">Alongamento na Fibra de vidro - Iniciante básico</div>
+          <div class="content">
+            <p>
+              - Apresentação dos materiais<br>
+              - Preparação correta da unha natural<br>
+              - Aplicação da fibra corretamente<br>
+              - Controle de produto<br>
+              - Sem controle de produto<br>
+              - Lixamento técnico<br>
+              - Lixamento motorizado<br>
+              - Simetria da unha<br>
+              - Acabamento perfeito<br>
+              - Redução de tempo<br>
+              - Esmaltação em gel<br>
+              - Bônus surpresa!<br>
+            </p>
+          </div>
+        </div>
+        <div class="contentBx">
+          <div class="label">Alongamento na Fibra de vidro - Iniciante avançado</div>
+          <div class="content">
+            <p>
+              - Preparação da unha natual<br>
+              - Controle de produto<br>
+              - Lixamento técnico<br>
+              - Acabamento Natual<br>
+              - Manutenção<br>
+              - Remoção segura do alongamento<br>
+              - Decorações encapsuladas (francesa reversa, degradê, cascata de glitter, francesa com fitilho e baby
+              boomer)<br>
+              - Preparação da fibra de vidro<br>
+              - Otimização de tempo em mesa<br>
+              - Formatos: Quadrada, Bailarina, Stiletto e Almond<br>
+              - Troca de formato<br>
+            </p>
+          </div>
+        </div>
+        <div class="contentBx">
+          <div class="label">Aperfeiçoamento na fibra de vidro</div>
+          <div class="content">
+            <p>
+              - Preparação da unha natural<br>
+              - Aplicação correta da fibra<br>
+              - Lixamento técnico<br>
+              - Controle de produto<br>
+              - Esqueleto para encapsular<br>
+              - Resistência e durabilidade<br>
+              - 5 técnicas de artes encapsuladas<br>
+              - Formatos: Quadrada, Bailarina, Stiletto e Almond<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    $this.html(++current);
-    if(current > $this.data('count')){
-        $this.html($this.data('count'));
-    } else {    
-        setTimeout(function(){count($this)}, 5);
-    }
-}        
-
-$(".stat-count").each(function() {
-  $(this).data('count', parseInt($(this).html(), 10));
-  $(this).html('0');
-  count($(this));
- });
-
-});
-  </script> -->
+  <script src="script.js"></script>
 </body>
 
 </html>
