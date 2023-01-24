@@ -347,7 +347,9 @@ header {
 
 .all-content{
     width: 70%;
+    height: 80%;
     margin: 0 auto;
+    margin-bottom: 5rem;
 }
 
 .content-left{
@@ -372,6 +374,14 @@ header {
     flex-direction: column;
     align-items: center;
     padding-top: 5rem;
+}
+
+.content-right > h1 {
+    font-size: 40px;
+    color: var(--color5);
+    font-family: 'Newsreader', sans-serif;
+    font-weight: bold;
+    /* align-self: flex-start; */
 }
 
 .accordion{
@@ -532,4 +542,331 @@ input[type="radio"]{
     line-height: 1.6;
     font-size: 1.4rem;
 
+}
+
+.about-course{
+    width: 100%;
+    height: 80%;
+    background-color: var(--color3);
+}
+
+.container-cards{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 5rem;
+	justify-content: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.course-selection{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.course-selection > h1{
+    font-family: 'Newsreader', serif;
+	font-size: 70px;
+    font-weight: 300;
+	color: var(--color5);
+	padding: 5rem;
+}
+
+.card{
+	width: 270px;
+	height: 405px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 5rem;
+    border-radius: 1rem;
+}
+.card{
+	background-color: #fff;
+    color: #000;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.card > h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	color: var(--color1);
+    font-weight: 700;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+
+.btn-card{
+	display: none;
+	outline: none;
+	border: none;
+	font-family: 'Monstserrat', sans-serif;
+	justify-content: center;
+    font-weight: bolder;
+	width: 80%;
+	font-size: 20px;
+	border-radius: 30px;
+	padding: 15px;
+	background-color: var(--color4);
+	color: var(--color1);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 0 auto;
+    cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.card:hover{
+    transition: all 0.5s ease;
+    /*  opacity: 0.8; */
+    /* mexer na opacidade */
+    transform: scale(1.03);
+}
+
+.card:hover .btn-card{
+	display: block;
+}
+
+.benefits-course{
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(90deg, rgba(153,126,117,1) 0%, rgba(212,205,200,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.footer-distributed{
+    background: var(--color4);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px 'Montserrat', sans-serif;
+    padding: 25px 50px;
+    margin-top: 5rem;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+    width: 40%;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Montserrat', sans-serif;
+    margin: 0;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+
+
+    font-size: 40px;
+    color: var(--color5);
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-distributed .footer-company-name{
+    color:  #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+    width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+    background-color:  var(--color5);
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color: var(--color5);
+    font-weight:700;
+    vertical-align: middle;
+    margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+    color:  var(--color1);
+    text-decoration: none;;
+  }
+  
+  /* .footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+   */
+  /* .footer-distributed .footer-links .link-1:before {
+    content: none;
+  } */
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  var(--color5);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .footer-distributed .footer-icons{
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+  
+    font-size: 40px;
+    color: var(--color5);
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+
+    
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 880px) {
+  
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+  
+  }
+
+  .container{
+    position: absolute;
+    width: 50%;
+    right: 0;
+
+}
+
+.counter-box {
+	display: block;
+	background: #f6f6f6;
+	padding: 40px 20px 37px;
+	text-align: center
+}
+
+.counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+	color: #909090;
+	font-size: 18px;
+	font-weight: 500
+}
+
+.counter-box i {
+	font-size: 60px;
+	margin: 0 0 15px;
+	color: #d2d2d2
+}
+
+.counter { 
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	color: #666;
+	line-height: 28px
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+	color: #fff
+}
+
+.counter-box .colored  {
+    margin-top: 5rem;
 }
