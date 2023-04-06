@@ -107,6 +107,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 :root {
@@ -142,6 +143,8 @@ header {
     background-color: var(--color4);
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
 }
 
 .container-header{
@@ -149,7 +152,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 1rem;
+    gap: 20px;
 }
+
 .text{
     z-index: 3;
 }
@@ -162,7 +167,7 @@ header {
 }
 
 .logo>img {
-    height: 60%;
+    height: 75%;
     margin-bottom: 1.2rem;
     z-index: 3;
 }
@@ -276,16 +281,11 @@ header {
     transform: scale(1.05);
 }
 
-.container-cards{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 5rem;
-	justify-content: center;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+.owl-item{
+  display: flex;
+  justify-content: space-around;
 }
+
 .course-selection{
 	display: flex;
 	flex-direction: column;
@@ -307,8 +307,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-bottom: 5rem;
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
 .card{
 	background-color: #fff;
@@ -370,6 +369,8 @@ header {
     margin-bottom: 5rem;
 }
 
+
+
 .aboutme img{
     height: 100%;
     width: 420px;
@@ -387,10 +388,12 @@ header {
     justify-content: space-around;
 }
 
+
+
 .about-text>h1{
     color: var(--color5);
     font-family: 'Newsreader', serif;
-	font-size: 50px;
+	  font-size: 50px;
     font-weight: 300;
     margin-bottom: 10px;
     word-spacing: 2rem;
@@ -399,6 +402,7 @@ header {
 
 .about-text p{
     font-family: 'Monstserrat', sans-serif;
+    font-size: 19px;
     color: var(--color5);
     line-height: 28px;
     text-align: justify;
@@ -411,6 +415,13 @@ header {
     width: 75%;
     margin-left: auto;
     margin-right: auto; 
+}
+
+.card-insta{
+  margin: 1rem auto;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: scale(0.7);
 }
 
 .gallery > h1{
@@ -463,15 +474,15 @@ header {
   .footer-distributed .footer-center,
   .footer-distributed .footer-right{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
+    text-align: center;
+    width: 33%;
   }
   
-  /* Footer left */
-  
-  .footer-distributed .footer-left{
-    width: 40%;
+  .footer-center{
+    text-align: left !important;
   }
-  
+
   /* The company logo */
   
   .footer-distributed h3{
@@ -512,11 +523,7 @@ header {
     margin: 0;
   }
   
-  /* Footer Center */
-  
-  .footer-distributed .footer-center{
-    width: 35%;
-  }
+
   
   .footer-distributed .footer-center i{
     background-color:  var(--color5);
@@ -571,10 +578,7 @@ header {
   } */
   
   /* Footer Right */
-  
-  .footer-distributed .footer-right{
-    width: 20%;
-  }
+
   
   .footer-distributed .footer-company-about{
     line-height: 20px;
@@ -594,7 +598,8 @@ header {
   }
   
   .footer-distributed .footer-icons{
-    align-items: center;
+    display: flex;
+    justify-content: center;
     margin-top: 25px;
   }
   
@@ -629,7 +634,7 @@ header {
     .footer-distributed .footer-right{
       display: block;
       width: 100%;
-      margin-bottom: 40px;
+      margin:0 auto;
     }
   
     .footer-distributed .footer-center i{
@@ -748,9 +753,6 @@ header {
 	z-index: 0;
 }
 
-.all-review > h1{
-	text-transform: uppercase;
-}
 
 .cards-review-top{
 	width: 100%;
@@ -793,8 +795,8 @@ header {
 }
 
 .all-review > h1{
-	font-family: 'Grandstander', sans-serif;
-	font-size: 100px;
+  font-family: 'Newsreader', serif;
+	font-size: 60px;
 	color: var(--color5);
 	padding-top: 5rem;
 }
@@ -830,4 +832,54 @@ header {
   
   .owl-nav .owl-next {
     right: -30px;
+  }
+
+  @media (max-width: 768px){
+    .banner{
+      align-items: flex-start;
+      padding: 60px 20px;
+      width: 100vw;
+    }
+
+    .text{
+      display: flex;
+      flex-direction: column;
+    }
+    .darlene{
+      left: 0;
+      bottom: -100px;
+      height: 70%;
+      transform: scaleX(-1);
+    }
+    .text-banner{
+      
+      margin-left: 0;
+    }
+    .subtitle-banner{
+      font-size: 20px;
+      margin: 0;
+    }
+    .btn-banner{
+      align-self: flex-end;
+      width: 60%;
+      margin: 0;
+    }
+    .aboutme{
+      max-width: 100%;
+    }
+    
+    .brush{
+      transform: scale(0.9);
+      right: -200px;
+      bottom: -200px;
+    }
+    .main{
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    .course-selection>h1{
+      padding:40px;
+      font-size: 37px;
+    }
   }
