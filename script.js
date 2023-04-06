@@ -47,20 +47,4 @@
     }
   });
 
-  $('.owl-three').owlCarousel({
-    loop: true,
-    margin: 5,
-    nav: true,
-    navText: [
-      "<i class='fa fa-caret-left'></i>",
-      "<i class='fa fa-caret-right'></i>"
-    ],
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      }
-
-    }
-  });
 
