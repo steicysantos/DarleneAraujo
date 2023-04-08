@@ -142,17 +142,17 @@ header {
     width: 100%;
     background-color: var(--color4);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+    
 }
 
 .container-header{
     display: flex;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 1rem;
     gap: 20px;
+    width: 50%;
 }
 
 .text{
@@ -163,7 +163,6 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-    margin-left: 7rem;
 }
 
 .logo>img {
@@ -185,7 +184,7 @@ header {
     font-size: 1rem;
     font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
-    margin: 2rem;
+    padding: 2rem;
     z-index: 10000;
 }
 
@@ -229,7 +228,6 @@ header {
 
 .text-banner {
     display: flex;
-    z-index: 5;
     font-family: 'Montserrat', sans-serif;
     color: var(--color1);
     font-size: 50px;
@@ -274,11 +272,6 @@ header {
     margin-left: -6rem;
     letter-spacing: 3px;
     border: none;
-}
-
-.btn-banner:hover{
-    opacity: 0.5;
-    transform: scale(1.05);
 }
 
 .owl-item{
@@ -417,11 +410,8 @@ header {
     margin-right: auto; 
 }
 
-.card-insta{
-  margin: 1rem auto;
-  border-radius: 20px;
-  overflow: hidden;
-  transform: scale(0.7);
+.image>img{
+  border-radius:20px ;
 }
 
 .gallery > h1{
@@ -562,22 +552,6 @@ header {
     color:  var(--color1);
     text-decoration: none;;
   }
-  
-  /* .footer-distributed .footer-links a:before {
-    content: "|";
-    font-weight:300;
-    font-size: 20px;
-    left: 0;
-    color: #fff;
-    display: inline-block;
-    padding-right: 5px;
-  }
-   */
-  /* .footer-distributed .footer-links .link-1:before {
-    content: none;
-  } */
-  
-  /* Footer Right */
 
   
   .footer-distributed .footer-company-about{
@@ -642,83 +616,6 @@ header {
     }
   
   }
-
-/* .review{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    background-image: linear-gradient(45deg, #000005 0%, #000042 50%, #000 100%);
-} */
-
-/* .carrousel{
-    width: 400px;
-    height: 400px;
-    position: relative;
-    border: none;
-}
-
-.carrousel-item{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 25px 50px;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.arrow{
-    border: solid #000;
-    border-width: 0 6px 6px 0;
-    display: flex;
-    padding: 15px;
-}
-
-.prev{
-    top: 50%;
-    left: 30px;
-    position: absolute;
-    transform: translateY(-50%) rotate(135deg);
-}
-
-.next{
-    top: 50%;
-    left: 30px;
-    position: absolute;
-    transform: translateY(-50%) rotate(-45deg);
-}
-
-[id^="item"]{
-    display: none;
-}
-
-.item-1{
-    z-index: 2;
-    opacity: 1;
-    background: url("assets/Courses/1.png");
-    background-size: cover;
-}
-.item-2{
-    background: url("assets/Courses/2.png");
-    background-size: cover;
-}
-.item-3{
-    background: url("assets/Courses/3.png");
-    background-size: cover;
-}
-
-*:target~.item-1{
-    opacity: 1;
-}
-
-#item-2:target~.item-2,
-#item-3:target~.item-3{
-    z-index: 3;
-    opacity: 1;
-} */
 
 .all-review{
 	display: flex;
@@ -876,10 +773,97 @@ header {
     .main{
       flex-direction: column;
       max-width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .main>img{
+      max-width: 80%;
+    }
+    .about-text{
+      margin-top: 20px;
+      max-width: 90%;
     }
 
     .course-selection>h1{
       padding:40px;
       font-size: 37px;
     }
+
+    .gallery{
+      align-items: center;
+    }
+    .gallery>h1{
+      font-size: 25px;
+      text-align: center;
+    }
   }
+
+
+  /* default styles */
+.dropdown-menu {
+  display: none;
+}
+
+select{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.menu-toggle{
+  display: none;
+}
+select::-ms-expand {
+  display: none;
+}
+/* media query for smaller screens */
+@media (max-width: 768px) {
+  .topics {
+    display: flex;
+    max-height: 0;
+    flex-direction: column;
+    z-index: -100;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+   
+    transition: all 0.3s ease;
+  }
+  .topics>h1{
+    color: var(--color4);
+  }
+  .logo{
+    transform: scale(0.8);
+  }
+   header{
+    flex-direction: column;
+   }
+   .container-header{
+    width: 100%;
+   }
+
+  .active{
+    max-height: 1000px;
+    display: flex;
+    background-color: white;
+    z-index: 100000000;
+  }
+  .dropdown-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+  .menu-toggle{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: white  ;
+    font-size: 20px;
+  }
+
+  .video{
+    width: 90%;
+  }
+}
