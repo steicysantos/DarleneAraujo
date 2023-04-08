@@ -48,3 +48,11 @@
   });
 
 
+const menuToggle = document.querySelector(".menu-toggle");
+const topics = document.querySelector(".topics");
+
+menuToggle.addEventListener("click", () => {
+  topics.classList.toggle("active");
+});
+
+
