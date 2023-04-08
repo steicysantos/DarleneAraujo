@@ -110,6 +110,9 @@ body {
     overflow-x: hidden;
 }
 
+a{
+  text-decoration: none;
+}
 :root {
     --color1: #FFFF;
     --color2: #D4CDC8;
@@ -459,7 +462,7 @@ header {
     width: 100%;
     text-align: left;
     font: bold 16px 'Montserrat', sans-serif;
-    padding: 25px 30px;
+    padding: 25px 15px;
     margin-top: 5rem;
   }
   
@@ -709,6 +712,12 @@ header {
 	padding-top: 5rem;
 }
 
+.owl-item{
+  display: flex;
+  justify-content: space-around;
+}
+
+
 .carousel-wrap {
     margin: 0px auto;
     padding: 0 5%;
@@ -817,17 +826,10 @@ header {
   display: none;
 }
 
-select{
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
 .menu-toggle{
   display: none;
 }
-select::-ms-expand {
-  display: none;
-}
+
 /* media query for smaller screens */
 @media (max-width: 768px) {
   .topics {

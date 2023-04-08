@@ -23,6 +23,3 @@ for(i = 0; i < accordion.length; i++){
   })
 }
 
-
-        
-        

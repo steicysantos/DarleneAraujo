@@ -10,20 +10,21 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <!-- Script -->
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -76,6 +77,8 @@
         </div>
         <div class="accordion-item">
           <div class="accordion-header">Iniciante Avançado</div>
+          .
+
           <div class="accordion-content">- Preparação da unha natual<br>
             - Controle de produto<br>
             - Lixamento técnico<br>
@@ -177,24 +180,39 @@
       </div>
     </div> 
   </div> -->
-
-  <div class="course-selection">
+  <div class="course-selection" id="Cursos">
     <h1>Cursos Presenciais</h1>
-    <div class="container-cards">
-      <div class="card" style="background-image: url(assets/courses/3.png);">
-        <h1>Iniciante<br>básico</h1>
-        <button class="btn-card">Compre já!</button>
-      </div>
-      <div class="card" style="background-image: url(assets/courses/1.png);">
-        <h1 style="font-size: 1.5rem;">Aperfeiçoamento</h1>
-        <button class="btn-card">Compre já!</button>
-      </div>
-      <div class="card" style="background-image: url(assets/courses/2.png);">
-        <h1>Iniciante<br>avançado</h1>
-        <button class="btn-card">Compre já!</button>
-      </div>
+</div>
+
+<div class="carousel-wrap">
+    <div class="owl-carousel owl-one">
+        <div class="item">
+            <a href="/curso-presencial/index.html">
+                <div class="card cursos" style="background-image: url(assets/Courses/3.png);">
+                    <h1>Iniciante<br>básico</h1>
+                    <button class="btn-card">Compre já!</button>
+                </div>
+            </a>
+        </div>
+        <div class="item cursos">
+            <a href="/curso-presencial/index.html">
+                <div class="card" style="background-image: url(assets/Courses/1.png);">
+                    <h1 style="font-size: 1.5rem;">Aperfeiçoamento</h1>
+                    <button class="btn-card">Compre já!</button>
+                </div>
+            </a>
+        </div>
+        <div class="item cursos">
+            <a href="/curso-presencial/index.html">
+                <div class="card" style="background-image: url(assets/Courses/2.png);">
+                    <h1>Iniciante<br>avançado</h1>
+                    <button class="btn-card">Compre já!</button>
+                </div>
+            </a>
+        </div>
     </div>
-  </div>
+</div>
+
   <div class="benefits-course">
     <div class="benefits-container">
 
@@ -251,7 +269,6 @@
       <div class="footer-icons">
         <a href="#"><i class="fa fa-instagram"></i></a>
         <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-whatsapp"></i></a>
       </div>
     </div>
   </footer>
@@ -335,6 +352,8 @@
 
 
   </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js'></script>
   <script src="script.js"></script>
 </body>
 
