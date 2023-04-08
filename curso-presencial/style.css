@@ -155,19 +155,28 @@ header {
 }
 
 .logo {
-    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .logo>img {
+    margin: 0;
     width: 20%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    cursor: pointer;
+    margin-left: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+    .logo > img {
+        margin-left: 0;
+    }
+
+    .container-header{
+        height: 50px;
+    }
 }
 
 /* .wrapper {
@@ -865,6 +874,7 @@ header {
 @media only screen and (max-width: 768px) {
     .benefits-course {
         background: linear-gradient(0deg, var(--color5) 0%, var(--color3) 50%, var(--color2) 100%);
+        height: 50%;
     }
 
     .benefits-container {
@@ -883,10 +893,16 @@ header {
 
     .benefits img {
         margin-bottom: 0;
+        width: 120px;
     }
 
     .imagem-curso{
         display: none;
+    }
+
+    .benefits{
+        margin-top: 0;
+
     }
 
 }
