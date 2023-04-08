@@ -179,99 +179,6 @@ header {
     }
 }
 
-/* .wrapper {
-    display: flex;
-    padding-top: 50px;
-    justify-content: center;
-}
-
-.collapsible {
-    max-width: 800px;
-    overflow: hidden;
-    font-weight: 500;
-}
-
-.collapsible input {
-    display: none;
-}
-
-.collapsible label {
-    position: relative;
-    font-weight: 600;
-    background-color: var(--color5);
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
-    color: var(--color1);
-    display: block;
-    margin-bottom: 10px;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 25px;
-    z-index: 1;
-    width: 600px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.collapsible input {
-    display: none;
-}
-
-.collapsible label:after {
-    content: "";
-    position: absolute;
-    right: 35px;
-    top: 18px;
-    width: 30px;
-    height: 15px;
-    background: url(assets/Flecha2.svg) no-repeat 0 0;
-    transition: all 0.3s ease;
-}
-
-.collapsibleinput label:after {
-    transform: rotate(90deg);
-}
-
-.collapsible-text {
-    overflow: hidden;
-    border-radius: 4px;
-    line-height: 1.4;
-    position: relative;
-    top: -100%;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-    border: 1px solid #ccc;
-}
-
-.collapsible input:checked~.collapsible-text {
-    padding-bottom: 25px;
-    background-color: var(--color1);
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
-    opacity: 1;
-    top: 0;
-}
-
-.collapsible input:checked+label:after {
-    transform: rotate(180deg);
-}
-
-
-.collapsible-text p {
-    padding-left: 15px;
-    line-height: 1.5;
-    display: flex;
-    margin-top: 15px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
-
-
-.content>p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: .89rem;
-    font-weight: 300;
-} */
-
-
 .title {
     font-size: 3rem;
     margin: 3rem 0rem;
@@ -405,8 +312,6 @@ header {
 
 .card:hover {
     transition: all 0.5s ease;
-    /*  opacity: 0.8; */
-    /* mexer na opacidade */
     transform: scale(1.03);
 }
 
@@ -433,13 +338,11 @@ header {
     vertical-align: top;
 }
 
-/* Footer left */
 
 .footer-distributed .footer-left {
     width: 40%;
 }
 
-/* The company logo */
 
 .footer-distributed h3 {
     color: #ffffff;
@@ -447,7 +350,6 @@ header {
     margin: 0;
 }
 
-/* Footer links */
 
 .footer-distributed .footer-links {
     color: #ffffff;
@@ -479,7 +381,6 @@ header {
     margin: 0;
 }
 
-/* Footer Center */
 
 .footer-distributed .footer-center {
     width: 35%;
@@ -519,12 +420,11 @@ header {
 }
 
 .footer-distributed .footer-center p a {
-    color: var(--color1);
+    color: var(--color5);
     text-decoration: none;
     ;
 }
 
-/* Footer Right */
 
 .footer-distributed .footer-right {
     width: 20%;
@@ -570,7 +470,6 @@ header {
 
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
 
@@ -590,10 +489,14 @@ header {
         margin-left: 0;
     }
 
+    .fa .fa-phone > p{
+        color: var(--color6);
+    }    
+
 }
 
 .container-counter {
-    display: flex;
+    display: flex;  
     width: 100%;
 }
 
@@ -671,7 +574,6 @@ header {
     background-color: #717171;
 }
 
-/* Responsividade */
 @media screen and (max-width: 768px) {
     .slider .slides {
         width: 200%;
@@ -782,17 +684,13 @@ header {
         align-items: center;
     }
 
-    .imagem {
-        width: 60%;
-    }
-
     .imagem,
     .accordion {
         flex-basis: 100%;
     }
 
     .imagem {
-        width: 50%;
+        width: 70%;
     }
 
     .accordion {
@@ -894,7 +792,7 @@ header {
 @media only screen and (max-width: 768px) {
     .benefits-course {
         background: linear-gradient(0deg, var(--color5) 0%, var(--color3) 50%, var(--color2) 100%);
-        height: 50%;
+        height: 60%;
     }
 
     .benefits-container {
