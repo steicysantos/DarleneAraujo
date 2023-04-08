@@ -915,6 +915,7 @@ header {
     .benefits img {
         margin-bottom: 0;
         width: 120px;
+        margin-bottom: 0rem;
     }
 
     .imagem-curso {
@@ -928,6 +929,15 @@ header {
 
     .left-benefits{
         width: 100%;
+    }
+
+    .left-benefits > h2{
+        font-size: 30px;
+        font-weight: bolder;
+        color: var(--color1);
+        font-family: 'Newsreader', sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
     }
 
 }
