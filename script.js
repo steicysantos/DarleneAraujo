@@ -23,7 +23,7 @@
 
   $('.owl-insta').owlCarousel({
     loop: true,
-    margin: 5,
+    margin: 8,
     nav: true,
     navText: [
       "<i class='fa fa-caret-left'></i>",

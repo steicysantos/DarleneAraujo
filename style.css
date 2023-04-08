@@ -142,7 +142,8 @@ header {
     width: 100%;
     background-color: var(--color4);
     display: flex;
-    
+    padding-top: 2rem;
+    align-items: center;
 }
 
 .container-header{
@@ -150,7 +151,6 @@ header {
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    padding-top: 1rem;
     gap: 20px;
     width: 50%;
 }
@@ -176,15 +176,16 @@ header {
     flex-direction: row;
     align-items: center;
     margin-right: 7rem;
+    gap: 1rem;
 }
 
 .topics > h1 {
     color: var(--color1);
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
-    padding: 2rem;
+    padding: 1.5rem;
     z-index: 10000;
 }
 
@@ -405,7 +406,7 @@ header {
 /* GALERIA */
 
 .gallery{
-    width: 75%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto; 
 }
@@ -415,10 +416,12 @@ header {
 }
 
 .gallery > h1{
-    font-family: 'Montserrat', sans-serif;
+  margin-left: 20%;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
 	font-size: 32px;
 	color: var(--color5);
-    font-weight: 700;
+  font-weight: 700;
 	margin-top: 20px;
 }
 .gallery-items{
@@ -456,7 +459,7 @@ header {
     width: 100%;
     text-align: left;
     font: bold 16px 'Montserrat', sans-serif;
-    padding: 25px 50px;
+    padding: 25px 30px;
     margin-top: 5rem;
   }
   
@@ -594,6 +597,10 @@ header {
 
     
   }
+
+  .footer-icons{
+    gap: 30px;
+  }
   
   /* If you don't want the footer to be responsive, remove these media queries */
   
@@ -613,6 +620,10 @@ header {
   
     .footer-distributed .footer-center i{
       margin-left: 0;
+    }
+
+    .footer-center{
+      margin: 15px !important;
     }
   
   }
@@ -778,7 +789,7 @@ header {
     }
 
     .main>img{
-      max-width: 80%;
+      max-width: 70%;
     }
     .about-text{
       margin-top: 20px;
@@ -792,6 +803,7 @@ header {
 
     .gallery{
       align-items: center;
+      width: 100%;
     }
     .gallery>h1{
       font-size: 25px;
@@ -826,7 +838,7 @@ select::-ms-expand {
     align-items: center;
     width: 100%;
     justify-content: space-between;
-   
+    margin: 0;
     transition: all 0.3s ease;
   }
   .topics>h1{
@@ -854,7 +866,9 @@ select::-ms-expand {
     justify-content: center;
    
   }
-
+  .gallery > h1{
+    margin-left: 0;
+  }
   .menu-toggle{
     display: flex;
     background-color: transparent;
