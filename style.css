@@ -410,11 +410,8 @@ header {
     margin-right: auto; 
 }
 
-.card-insta{
-  margin: 1rem auto;
-  border-radius: 20px;
-  overflow: hidden;
-  transform: scale(0.7);
+.image>img{
+  border-radius:20px ;
 }
 
 .gallery > h1{
@@ -776,11 +773,29 @@ header {
     .main{
       flex-direction: column;
       max-width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .main>img{
+      max-width: 80%;
+    }
+    .about-text{
+      margin-top: 20px;
+      max-width: 90%;
     }
 
     .course-selection>h1{
       padding:40px;
       font-size: 37px;
+    }
+
+    .gallery{
+      align-items: center;
+    }
+    .gallery>h1{
+      font-size: 25px;
+      text-align: center;
     }
   }
 
@@ -846,5 +861,9 @@ select::-ms-expand {
     border: none;
     color: white  ;
     font-size: 20px;
+  }
+
+  .video{
+    width: 90%;
   }
 }
