@@ -459,7 +459,7 @@ header {
     width: 100%;
     text-align: left;
     font: bold 16px 'Montserrat', sans-serif;
-    padding: 25px 50px;
+    padding: 25px 30px;
     margin-top: 5rem;
   }
   
@@ -597,6 +597,10 @@ header {
 
     
   }
+
+  .footer-icons{
+    gap: 30px;
+  }
   
   /* If you don't want the footer to be responsive, remove these media queries */
   
@@ -616,6 +620,10 @@ header {
   
     .footer-distributed .footer-center i{
       margin-left: 0;
+    }
+
+    .footer-center{
+      margin: 15px !important;
     }
   
   }
@@ -781,7 +789,7 @@ header {
     }
 
     .main>img{
-      max-width: 80%;
+      max-width: 70%;
     }
     .about-text{
       margin-top: 20px;
@@ -858,7 +866,6 @@ select::-ms-expand {
     justify-content: center;
    
   }
-
   .gallery > h1{
     margin-left: 0;
   }
