@@ -108,9 +108,11 @@ html,
 body {
     height: 100%;
     width: 100%;
-    overflow-x: none;
 }
 
+body{
+    overflow-x: none;
+}
 :root {
     --color1: #FFFF;
     --color2: #D4CDC8;
@@ -311,7 +313,7 @@ header {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     color: var(--color1);
-    font-size: 20px;
+    font-size: 15px;
     width: 70%;
 }
 
@@ -784,11 +786,15 @@ header {
     }
 
     .accordion {
-        width: 400px;
+        width: 85%;
     }
 
     .accordion>h2 {
         font-size: 1.5rem;
+    }
+
+    .accordion-header{
+        font-size: 20px;
     }
 }
 
