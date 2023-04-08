@@ -108,17 +108,16 @@ html,
 body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
-body{
-    overflow-x: none;
-}
 :root {
     --color1: #FFFF;
     --color2: #D4CDC8;
     --color3: #CAB5B1;
     --color4: #B7998E;
     --color5: #997E75;
+    --color6: #795B4C;
 }
 
 .whatsapp-link {
@@ -171,7 +170,7 @@ header {
     cursor: pointer;
 }
 
-.wrapper {
+/* .wrapper {
     display: flex;
     padding-top: 50px;
     justify-content: center;
@@ -261,7 +260,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-size: .89rem;
     font-weight: 300;
-}
+} */
 
 
 .title {
@@ -808,10 +807,9 @@ header {
 
 .benefits-container {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 15px;
     width: 50%;
     display: grid;
-
 }
 
 .benefits {
@@ -838,12 +836,12 @@ header {
     right: 0;
     margin: 0;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
     color: white;
-    font-weight: bolder;
+    font-weight: 300;
     font-family: 'Newsreader', serif;
-    font-size: 20px;
+    font-size: 18x;
     letter-spacing: 1px;
 }
 
@@ -851,8 +849,8 @@ header {
     width: 50%;
     position: relative;
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .imagem-curso > img {
@@ -880,7 +878,7 @@ header {
         background-color: transparent;
         padding: 0;
         text-align: left;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .benefits img {
@@ -892,3 +890,93 @@ header {
     }
 
 }
+
+.all-info-course {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    background: #795B4C;
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .info-course-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 50%;
+    display: grid;
+    margin: 2rem;
+  }
+  
+  .info-course {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+  }
+  
+  
+  .info-course p {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: #795B4C;
+    font-weight: bolder;
+    font-family: 'Newsreader', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .counter {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    color: #795B4C;
+    line-height: 28px;
+    margin-top: 1.5rem;
+  }
+  
+  .text-info-course {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .text-info-course > h2{
+    font-size: 16px;
+    color: white;
+    line-height: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  
+
+  @media only screen and (max-width: 768px) {
+    .all-info-course {
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .text-info-course,
+    .info-course-container {
+      flex: 1;
+    }
+  }
