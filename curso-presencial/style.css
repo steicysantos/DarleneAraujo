@@ -108,6 +108,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    overflow-x: none;
 }
 
 :root {
@@ -295,8 +296,9 @@ header {
     display: flex;
     width: 100%;
     height: 80%;
-    background-color: var(--color3);
+    background-color: var(--color5);
     padding: 0 10%;
+    align-items: row;
 }
 
 .about-course>.container {
@@ -309,7 +311,7 @@ header {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     color: var(--color1);
-    font-size: 22px;
+    font-size: 20px;
     width: 70%;
 }
 
@@ -579,12 +581,18 @@ header {
     }
 
 }
-
+.container-counter{
+    display: flex;
+    width: 100%;
+}
 .counter-box {
     display: block;
     padding: 40px 20px 37px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--color1);
+    margin: 1rem;
+    border-radius: 15px;
 }
 
 .counter-box p {
@@ -592,13 +600,7 @@ header {
     padding: 0;
     color: var(--color5);
     font-size: 18px;
-    font-weight: 500
-}
-
-.counter-box i {
-    font-size: 60px;
-    margin: 0 0 15px;
-    color: var(--color5)
+    font-weight: bolder;
 }
 
 .counter {
@@ -609,16 +611,6 @@ header {
     line-height: 28px
 }
 
-.counter-box.colored p,
-.counter-box.colored i,
-.counter-box.colored a,
-.counter-box.colored .counter {
-    color: var(--color5)
-}
-
-.counter-box .colored {
-    margin-top: 5rem;
-}
 
 * {
     box-sizing: border-box;

@@ -107,6 +107,7 @@
 
   <div class="about-course">
     <div class="about-text">
+      
       <h1>
         O curso surgiu em média um ano depois que eu comecei com alongamento algumas pessoas e até cliente começaram a
         pedir curso me
@@ -118,34 +119,37 @@
       </h1>
 
     </div>
-    <div class="container">
       <div class="row">
         <div class="four col-md-5">
           <div class="counter-box colored">
-            <i class="fa fa-thumbs-o-up"></i>
-            <span class="counter">2147</span>
-            <p>Happy Customers</p>
+            <!-- <i class="fa fa-thumbs-o-up"></i> -->
+            <!-- <span class="counter">78</span> -->
+            <div class="counter" id="counter1">0</div>
+            <p>Alunas formadas</p>
           </div>
         </div>
         <div class="four col-md-5">
           <div class="counter-box">
-            <i class="fa fa-group"></i>
-            <span class="counter">3275</span>
-            <p>Registered Members</p>
+            <!-- <i class="fa fa-group"></i> -->
+            <!-- <span class="counter">1000</span> -->
+            <div class="counter" id="counter2">0</div>
+            <p>Unhas feitas</p>
           </div>
         </div>
         <div class="four col-md-5">
           <div class="counter-box">
-            <i class="fa  fa-shopping-cart"></i>
-            <span class="counter">289</span>
-            <p>Available Products</p>
+            <!-- <i class="fa  fa-shopping-cart"></i> -->
+            <!-- <span class="counter">10</span> -->
+            <div class="counter" id="counter3">0</div>
+            <p>Anos de experiência</p>
           </div>
         </div>
         <div class="four col-md-5">
           <div class="counter-box">
-            <i class="fa  fa-user"></i>
-            <span class="counter">1563</span>
-            <p>Saved Trees</p>
+            <!-- <i class="fa  fa-user"></i> -->
+            <!-- <span class="counter">70</span> -->
+            <div class="counter" id="counter4">0</div>
+            <p>Aulas ministradas</p>
           </div>
         </div>
       </div>
@@ -155,42 +159,44 @@
   <div class="course-selection">
     <h1>Cursos Presenciais</h1>
     <div class="container-cards">
-      <div class="card" style="background-image: url(assets/courses/3.png);">
+      <div class="card" style="background-image: url(assets/Courses/1.png);">
         <h1>Iniciante<br>básico</h1>
         <button class="btn-card">Compre já!</button>
       </div>
-      <div class="card" style="background-image: url(assets/courses/1.png);">
+      <div class="card" style="background-image: url(assets/Courses/1.png);">
         <h1 style="font-size: 1.5rem;">Aperfeiçoamento</h1>
         <button class="btn-card">Compre já!</button>
       </div>
-      <div class="card" style="background-image: url(assets/courses/2.png);">
+      <div class="card" style="background-image: url(assets/Courses/2.png);">
         <h1>Iniciante<br>avançado</h1>
         <button class="btn-card">Compre já!</button>
       </div>
     </div>
   </div>
   <div class="benefits-course">
+    <h2>O curso oferece:</h2>
     <div class="benefits-container">
+      
       <div class="benefits">
-        <img src="assets/Group 34.png" alt="Imagem 1">
+        <img src="assets/Benefits/Certificado.png" alt="Imagem 1">
         <h2>Certificado</h2>
       </div>
       <div class="benefits">
-        <img src="assets/Group 35.png" alt="Imagem 2">
+        <img src="assets/Benefits/Apostila.png" alt="Imagem 2">
         <h2>Apostila</h2>
       </div>
       <div class="benefits">
-        <img src="assets/Group 36.png" alt="Imagem 3">
+        <img src="assets/Benefits/Material.png" alt="Imagem 3">
         <h2>Material para o curso</h2>
       </div>
       <div class="benefits">
-        <img src="assets/Group 37.png" alt="Imagem 4">
+        <img src="assets/Benefits/Café.png" alt="Imagem 4">
         <h2>Coffee Break</h2>
       </div>
     </div>
 
     <div class="imagem-curso">
-      <img src="assets/Curso.png" alt="">
+      <img src="assets/Benefits/Curso.png" alt="">
 
     </div>
   </div>
@@ -229,9 +235,6 @@
   </footer>
 
   <script>
-
-
-
     var slideIndex = 0;
     var slides = document.getElementsByClassName("slide");
     var dots = document.getElementsByClassName("dot");
@@ -276,6 +279,37 @@
         }
       });
     });
+
+    window.addEventListener('load', () => {
+  let counter1 = 0;
+  let counter2 = 0;
+  let counter3 = 0;
+  let counter4 = 0;
+
+  const target1 = 78;
+  const target2 = 1000;
+  const target3 = 10;
+  const target4 = 70;
+
+  setInterval(() => {
+    if (counter1 < target1) {
+      counter1++;
+      document.getElementById('counter1').innerText = counter1;
+    }
+    if (counter2 < target2) {
+      counter2++;
+      document.getElementById('counter2').innerText = counter2;
+    }
+    if (counter3 < target3) {
+      counter3++;
+      document.getElementById('counter3').innerText = counter3;
+    }
+    if (counter4 < target4) {
+      counter4++;
+      document.getElementById('counter4').innerText = counter4;
+    }
+  }, 10);
+});
 
 
   </script>

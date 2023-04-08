@@ -8,25 +8,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card-container">
-    <div class="card">
-      <img src="assets/Group 34.png" alt="Imagem 1">
-      <h2>Certificado</h2>
-    </div>
-    <div class="card">
-      <img src="assets/Group 35.png" alt="Imagem 2">
-      <h2>Apostila</h2>
-    </div>
-    <div class="card">
-      <img src="assets/Group 36.png" alt="Imagem 3">
-      <h2>Material para o curso</h2>
-    </div>
-    <div class="card">
-      <img src="assets/Group 37.png" alt="Imagem 4">
-      <h2>Coffee Break</h2>
-    </div>
+  <div class="counter-container">
+    <div class="counter" id="counter1">0</div>
+    <div class="counter" id="counter2">0</div>
+    <div class="counter" id="counter3">0</div>
+    <div class="counter" id="counter4">0</div>
   </div>
-  
-  
+  <script>
+    window.addEventListener('load', () => {
+  let counter1 = 0;
+  let counter2 = 0;
+  let counter3 = 0;
+  let counter4 = 0;
+
+  const target1 = 100;
+  const target2 = 200;
+  const target3 = 300;
+  const target4 = 400;
+
+  setInterval(() => {
+    if (counter1 < target1) {
+      counter1++;
+      document.getElementById('counter1').innerText = counter1;
+    }
+    if (counter2 < target2) {
+      counter2++;
+      document.getElementById('counter2').innerText = counter2;
+    }
+    if (counter3 < target3) {
+      counter3++;
+      document.getElementById('counter3').innerText = counter3;
+    }
+    if (counter4 < target4) {
+      counter4++;
+      document.getElementById('counter4').innerText = counter4;
+    }
+  }, 10);
+});
+
+  </script>
 </body>
 </html>
