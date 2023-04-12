@@ -425,8 +425,17 @@ header {
     margin-right: auto; 
 }
 
+.image{
+  background-size: cover;
+  background-repeat:no-repeat;
+
+}
+
 .image>img{
-  border-radius:20px ;
+  aspect-ratio: 3/4;
+  border-radius:20px;
+  background-size: cover;
+  background-repeat:no-repeat
 }
 
 .gallery > h1{
@@ -730,6 +739,8 @@ header {
 
 .owl-stage{
   padding: 20px;
+  display: flex;
+  align-items: center;
 }
 
 
