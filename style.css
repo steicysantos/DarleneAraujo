@@ -897,4 +897,8 @@ header {
   .video{
     width: 90%;
   }
+
+  .owl-stage{
+    padding: 10px 0px;
+  }
 }
