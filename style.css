@@ -780,8 +780,8 @@ header {
     .darlene{
       left: 0;
       bottom: -100px;
-      height: 70%;
       transform: scaleX(-1);
+      height: 70%;
     }
     .text-banner{
       
