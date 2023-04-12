@@ -778,9 +778,8 @@ header {
       flex-direction: column;
     }
     .darlene{
-      left: 0;
+      right: 0px;
       bottom: -100px;
-      transform: scaleX(-1);
       height: 70%;
     }
     .text-banner{
@@ -794,7 +793,7 @@ header {
     .btn-banner{
       align-self: flex-end;
       width: 60%;
-      margin: 0;
+      margin: 12px 0px;
     }
     .aboutme{
       max-width: 100%;
@@ -866,6 +865,7 @@ header {
   }
    header{
     flex-direction: column;
+    padding-top: 0.2rem;
    }
    .container-header{
     width: 100%;
