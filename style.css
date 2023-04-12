@@ -354,6 +354,17 @@ header {
 
 /* SOBRE MIM */
 
+.insta{
+  width: 285px;
+	height: 561px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  border-radius: 1rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 13px -8px rgb(105, 105, 105);
+}
 
 .aboutme{
     width: 100%;
@@ -715,6 +726,10 @@ header {
 .owl-item{
   display: flex;
   justify-content: space-around;
+}
+
+.owl-stage{
+  padding: 20px;
 }
 
 
