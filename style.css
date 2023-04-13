@@ -427,6 +427,7 @@ header {
 
 .image>img{
   border-radius:20px ;
+  transform: scale(0.8);
 }
 
 .gallery > h1{
