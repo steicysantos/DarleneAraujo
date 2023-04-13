@@ -425,16 +425,8 @@ header {
     margin-right: auto; 
 }
 
-.image{
-  background-size: cover;
-  background-repeat:no-repeat;
-
-}
-
 .image>img{
-  border-radius:20px;
-  background-size: cover;
-  background-repeat:no-repeat
+  border-radius:20px ;
 }
 
 .gallery > h1{
@@ -738,13 +730,12 @@ header {
 
 .owl-stage{
   padding: 20px;
-  display: flex;
-  align-items: center;
 }
 
 
 .carousel-wrap {
     margin: 0px auto;
+    padding: 0 5%;
     width: 80%;
     position: relative;
   }
@@ -787,9 +778,10 @@ header {
       flex-direction: column;
     }
     .darlene{
-      right: 0px;
+      left: 0;
       bottom: -100px;
       height: 70%;
+      transform: scaleX(-1);
     }
     .text-banner{
       
@@ -802,7 +794,7 @@ header {
     .btn-banner{
       align-self: flex-end;
       width: 60%;
-      margin: 12px 0px;
+      margin: 0;
     }
     .aboutme{
       max-width: 100%;
@@ -874,7 +866,6 @@ header {
   }
    header{
     flex-direction: column;
-    padding-top: 0.2rem;
    }
    .container-header{
     width: 100%;
