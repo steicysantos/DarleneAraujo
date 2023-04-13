@@ -432,7 +432,6 @@ header {
 }
 
 .image>img{
-  aspect-ratio: 3/4;
   border-radius:20px;
   background-size: cover;
   background-repeat:no-repeat
@@ -746,7 +745,6 @@ header {
 
 .carousel-wrap {
     margin: 0px auto;
-    padding: 0 5%;
     width: 80%;
     position: relative;
   }
