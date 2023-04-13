@@ -430,17 +430,17 @@ header {
   margin-right: auto;
 }
 
-.image {
+.image{
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
 
 }
 
-.image>img {
+.image>img{
   aspect-ratio: 3/4;
-  border-radius: 20px;
+  border-radius:20px;
   background-size: cover;
-  background-repeat: no-repeat
+  background-repeat:no-repeat
 }
 
 .gallery>h1 {
@@ -747,8 +747,6 @@ header {
 
 .owl-stage {
   padding: 20px;
-  display: flex;
-  align-items: center;
 }
 
 
@@ -791,49 +789,43 @@ header {
     width: 100vw;
   }
 
-  .text {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .darlene {
-    right: 0px;
-    bottom: -100px;
-    height: 70%;
-  }
-
-  .text-banner {
-
-    margin-left: 0;
-  }
-
-  .subtitle-banner {
-    font-size: 20px;
-    margin: 0;
-  }
-
-  .btn-banner {
-    align-self: flex-end;
-    width: 60%;
-    margin: 12px 0px;
-  }
-
-  .aboutme {
-    max-width: 100%;
-  }
-
-  .brush {
-    transform: scale(0.9);
-    right: -200px;
-    bottom: -200px;
-  }
-
-  .main {
-    flex-direction: column;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-  }
+    .text{
+      display: flex;
+      flex-direction: column;
+    }
+    .darlene{
+      right: 0px;
+      bottom: -100px;
+      height: 70%;
+    }
+    .text-banner{
+      
+      margin-left: 0;
+    }
+    .subtitle-banner{
+      font-size: 20px;
+      margin: 0;
+    }
+    .btn-banner{
+      align-self: flex-end;
+      width: 60%;
+      margin: 12px 0px;
+    }
+    .aboutme{
+      max-width: 100%;
+    }
+    
+    .brush{
+      transform: scale(0.9);
+      right: -200px;
+      bottom: -200px;
+    }
+    .main{
+      flex-direction: column;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+    }
 
   .main>img {
     max-width: 70%;
@@ -894,9 +886,8 @@ header {
   header {
     flex-direction: column;
     padding-top: 0.2rem;
-  }
-
-  .container-header {
+   }
+   .container-header{
     width: 100%;
   }
 
