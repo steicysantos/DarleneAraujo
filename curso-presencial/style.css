@@ -148,11 +148,6 @@ header {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.container-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .logo {
     display: flex;
@@ -342,6 +337,28 @@ header {
     margin: 0 auto;
     cursor: pointer;
     margin-bottom: 30px;
+}
+
+.btn-slide {
+    background: var(--color5);
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600; 
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 3px;
+    border: none;
+    width: fit-content;
+    align-self: flex-end;
+    margin: 2.5rem;
 }
 
 .card:hover {
@@ -569,6 +586,7 @@ header {
 }
 
 .slider {
+    height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -580,13 +598,16 @@ header {
 }
 
 .slider .slides {
+    height: 100%;
     display: flex;
     width: 300%;
 }
 
 .slider .slide {
+    height: 100%;
     width: 33.3333%;
     float: left;
+    margin: auto 0;
 }
 
 .slider .dots {
@@ -609,6 +630,55 @@ header {
 
 .slider .dot.active {
     background-color: #717171;
+}
+
+.banner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;  
+    background: rgb(255, 255, 255);
+    background: linear-gradient(270deg, rgba(153, 126, 117, 1) 0%, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 1) 100%);
+}
+.banner>h1{
+    font-size: 100px;
+    color: white;
+    text-align: end;
+    width: 38%;
+    letter-spacing: 5px;
+}
+
+.slide>img{
+    position: absolute;
+    transform: scale(0.25);
+    top: -1201px;
+    right: -500px;
+}
+
+.texts-slide>h1{
+    font-family: 'Newsreader', serif;
+    font-size: 35px;
+    margin: 15% 0 0  20%;
+}
+
+.texts-slide>h2{
+    font-family: 'Montserrat', serif;
+    color: white;
+    background-color: #997E75;
+    font-size: 40px;
+    margin: 1.5rem 0;
+    padding:  12px 20%;
+}
+.texts-slide>h3{
+    font-family: 'Montserrat', serif;
+    font-size: 24px;
+    margin-left: 20%;
+}
+
+.texts-slide{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
 }
 
 @media screen and (max-width: 768px) {
