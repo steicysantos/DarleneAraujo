@@ -107,7 +107,14 @@ $("#GaleriaMenu").click(function() {
   $('html, body').animate({
       scrollTop: $("#Galeria").offset().top
   }, 1000);
-})
+});
+
+$("#AvaliacoesMenu").click(function(){
+  console.log("tetey")
+  $('html, body').animate({
+    scrollTop: $("#Avaliacoes").offset().top
+  }, 1000);
+});
 
 $("#InicioMenu").click(function() {
   console.log("Nathan")
