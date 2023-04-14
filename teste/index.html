@@ -1,158 +1,115 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: #795B4C;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="../curso-presencial/assets/Banner/1.png" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="../curso-presencial/assets/Banner/2.png" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="../curso-presencial/assets/Banner/3.png" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="slide">
+              <div class="banner">
+                <div class="texts-slide">
+                  <h1>Curso Nail Designer</h1>
+                  <h2>APERFEIÇOAMENTO</h2>
+                  <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
+                    <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
+                    <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada entre
+                    outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
+                  </h3>
+                  <button class="btn-slide">SAIBA MAIS</button>
+                </div>
+                <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
+              </div>
+              <img src="/assets/darlene-curso.png" alt="">
+            </div>  
+        </div>
+        <div class="mySlides fade">
+          <div class="slide">
+              <div class="banner">
+                <div class="texts-slide">
+                  <h1>Curso Nail Designer</h1>
+                  <h2>MANUTENÇÃO</h2>
+                  <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
+                    <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
+                    <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada entre
+                    outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
+                  </h3>
+                  <button class="btn-slide">SAIBA MAIS</button>
+                </div>
+                <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
+              </div>
+              <img src="/assets/darlene-curso.png" alt="">
+            </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="slide">
+              <div class="banner">
+                <div class="texts-slide">
+                  <h1>Curso Nail Designer</h1>
+                  <h2>INICIANTE BÁSICO</h2>
+                  <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
+                    <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
+                    <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada entre
+                    outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
+                  </h3>
+                  <button class="btn-slide">SAIBA MAIS</button>
+                </div>
+                <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
+              </div>
+              <img src="/assets/darlene-curso.png" alt="">
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+      <script>
+        let slideIndex = 0;
+        let timeoutId = null;
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+        
+        showSlides();
+        function currentSlide(index) {
+             slideIndex = index;
+             showSlides();
+        }
+       function plusSlides(step) {
+          
+          if(step < 0) {
+              slideIndex -= 2;
+              
+              if(slideIndex < 0) {
+                slideIndex = slides.length - 1;
+              }
+          }
+          
+          showSlides();
+       }
+        function showSlides() {
+          for(let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            dots[i].classList.remove('active');
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].classList.add('active');
+           if(timeoutId) {
+              clearTimeout(timeoutId);
+           }
+          timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+      </script>
 </body>
-</html> 
+</html>
