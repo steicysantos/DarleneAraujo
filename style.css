@@ -437,10 +437,8 @@ header {
 }
 
 .image>img{
-  aspect-ratio: 3/4;
   border-radius:20px;
-  background-size: cover;
-  background-repeat:no-repeat
+  transform: scale(0.8);
 }
 
 .gallery>h1 {
