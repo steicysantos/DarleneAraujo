@@ -909,6 +909,13 @@ header {
 
 }
 
+/* @media only screen and (max-width: 690px) {
+    .benefits-course {
+        background: linear-gradient(0deg, var(--color5) 0%, var(--color3) 50%, var(--color2) 100%);
+        height: 65%;
+    }
+} */
+
 .all-info-course {
     display: flex;
     width: 100%;
@@ -997,6 +1004,7 @@ header {
     }
 }
 
+<<<<<<< HEAD
 .owl-item {
     display: flex;
     justify-content: space-around;
@@ -1038,3 +1046,5 @@ header {
   .owl-nav .owl-next {
     right: -30px;
   }
+=======
+>>>>>>> dfc80fde2e415d7dc507266ec815df6fe10fefdc

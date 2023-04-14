@@ -1,47 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-
 <body>
-    <div class="slider">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-
-
-            <div class="slide first">
-                <img src="../curso-presencial/assets/Banner/1.png" alt="img1">
-            </div>
-            <div class="slide">
-                <img src="../curso-presencial/assets/Banner/2.png" alt="img2">
-            </div>
-            <div class="slide">
-                <img src="../curso-presencial/assets/Banner/3.png" alt="img3">
-            </div>
-
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="slide">
+              <div class="banner">
+                <div class="texts-slide">
+                  <h1>Curso Nail Designer</h1>
+                  <h2>APERFEIÇOAMENTO</h2>
+                  <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
+                    <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
+                    <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada entre
+                    outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
+                  </h3>
+                  <button class="btn-slide">SAIBA MAIS</button>
+                </div>
+                <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
+              </div>
+              <img src="/assets/darlene-curso.png" alt="">
+            </div>  
+        </div>
+        <div class="mySlides fade">
+          <div class="slide">
+              <div class="banner">
+                <div class="texts-slide">
+                  <h1>Curso Nail Designer</h1>
+                  <h2>MANUTENÇÃO</h2>
+                  <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
+                    <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
+                    <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada entre
+                    outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
+                  </h3>
+                  <button class="btn-slide">SAIBA MAIS</button>
+                </div>
+                <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
+              </div>
+              <img src="/assets/darlene-curso.png" alt="">
             </div>
         </div>
-
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
+        <div class="mySlides fade">
+          <div class="slide">
+              <div class="banner">
+                <div class="texts-slide">
+                  <h1>Curso Nail Designer</h1>
+                  <h2>INICIANTE BÁSICO</h2>
+                  <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
+                    <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
+                    <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada entre
+                    outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
+                  </h3>
+                  <button class="btn-slide">SAIBA MAIS</button>
+                </div>
+                <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
+              </div>
+              <img src="/assets/darlene-curso.png" alt="">
+            </div>
         </div>
-    </div>
-
-    <script src="script.js"></script>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+      <script>
+        let slideIndex = 0;
+        let timeoutId = null;
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+        
+        showSlides();
+        function currentSlide(index) {
+             slideIndex = index;
+             showSlides();
+        }
+       function plusSlides(step) {
+          
+          if(step < 0) {
+              slideIndex -= 2;
+              
+              if(slideIndex < 0) {
+                slideIndex = slides.length - 1;
+              }
+          }
+          
+          showSlides();
+       }
+        function showSlides() {
+          for(let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            dots[i].classList.remove('active');
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].classList.add('active');
+           if(timeoutId) {
+              clearTimeout(timeoutId);
+           }
+          timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+      </script>
 </body>
-
 </html>

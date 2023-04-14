@@ -1,27 +1,29 @@
-// let count = 1
+let slideIndex = 1;
+showSlides(slideIndex);
 
-// document.getElementById("radio1").checked = true;
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-// setInterval(function(){
-//   nextImage();
-// }, 7000)
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-// function nextImage(){
-//   count++;
-//   if(count>4){
-//     count=1;
-//   }
-
-//   document.getElementById("radio"+count).checked = true;
-// }
-
-// const accordion = document.getElementsByClassName('contentBx');
-
-// for(i = 0; i < accordion.length; i++){
-//   accordion[i].addEventListener('click', function(){
-//     this.classList.toggle('active')
-//   })
-// }
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 
 // console.log("Nathan")
 
