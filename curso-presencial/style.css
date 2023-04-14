@@ -638,7 +638,7 @@ header {
     display: flex;
     overflow: hidden;  
     background: rgb(255, 255, 255);
-    background: linear-gradient(270deg, rgba(153, 126, 117, 1) 0%, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(270deg, rgba(153, 126, 117, 0.664) 0%, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 1) 100%);
 }
 .banner>h1{
     font-size: 100px;
