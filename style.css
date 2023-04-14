@@ -184,6 +184,16 @@ header {
   gap: 1rem;
 }
 
+.topics>a>h1 {
+  color: var(--color1);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1.5rem;
+  z-index: 10000;
+  cursor: pointer;
+}
 .topics>h1 {
   color: var(--color1);
   text-transform: uppercase;
@@ -874,7 +884,9 @@ header {
 
   .topics>h1 {
     color: var(--color4);
-    
+  }
+  .topics>a>h1 {
+    color: var(--color4);
   }
 
   .logo {

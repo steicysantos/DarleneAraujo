@@ -1,0 +1,77 @@
+
+  <!-- <div class="all-info-course">
+    <div class="text-info-course">
+      <h2>O curso surgiu em média um ano depois que eu comecei com alongamento algumas pessoas e até cliente começaram a
+        pedir curso me
+        sentia insegura e sem preparo para passar curso , comecei a passar e com isso fui estudando cada vez e mais e
+        buscando
+        conhecimento também sobre ministrar curso hoje em dia passo curso toda semana em meu Studio tenho alunas de
+        outros
+        estados e até de outros países quero encorajar você a nunca desistir dos seus sonhos e correr atrás deles .
+      </h2>
+    </div>
+    <div class="info-course-container">
+      <div class="info-course">
+        <div class="counter" id="counter1">0</div>
+        <p>Anos de experiência</p>
+      </div>
+      <div class="info-course">
+        <div class="counter" id="counter2">0</div>
+        <p>Anos de experiência</p>
+      </div>
+      <div class="info-course">
+        <div class="counter" id="counter3">0</div>
+        <p>Anos de experiência</p>
+      </div>
+      <div class="info-course">
+        <div class="counter" id="counter4">0</div>
+        <p>Anos de experiência</p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="about-course">
+    <div class="about-text">
+      <h1>
+        O curso surgiu em média um ano depois que eu comecei com alongamento algumas pessoas e até cliente começaram a
+        pedir curso me
+        sentia insegura e sem preparo para passar curso , comecei a passar e com isso fui estudando cada vez e mais e
+        buscando
+        conhecimento também sobre ministrar curso hoje em dia passo curso toda semana em meu Studio tenho alunas de
+        outros
+        estados e até de outros países quero encorajar você a nunca desistir dos seus sonhos e correr atrás deles .
+      </h1>
+
+    </div>
+     <div class="container-counter">
+      <div class="row">
+        <div class="four col-md-5">
+          <div class="counter-box colored">
+            <div class="counter" id="counter1">0</div>
+            <p>Alunas formadas</p>
+          </div>
+        </div>
+        <div class="four col-md-5">
+          <div class="counter-box">
+            <div class="counter" id="counter2">0</div>
+            <p>Unhas feitas</p>
+          </div>
+        </div>
+        <div class="four col-md-5">
+          <div class="counter-box">
+            <div class="counter" id="counter3">0</div>
+            <p>Anos de experiência</p>
+          </div>
+        </div>
+        <div class="four col-md-5">
+          <div class="counter-box">
+            <div class="counter" id="counter4">0</div>
+            <p>Aulas ministradas</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> -->
+  <!-- <div class="course-selection" id="Cursos">
+    <h1>Cursos Presenciais</h1>
+</div> -->

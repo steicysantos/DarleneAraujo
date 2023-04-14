@@ -165,38 +165,6 @@ header {
 }
 
 
-.carousel-wrap {
-    margin: 0px auto;
-    padding: 0 5%;
-    width: 80%;
-    position: relative;
-  }
-  
-  /* fix blank or flashing items on carousel */
-  .owl-carousel .item {
-    position: relative;
-    z-index: 100; 
-    -webkit-backface-visibility: hidden; 
-  }
-  
-  /* end fix */
-  .owl-nav > div {
-    position: absolute;
-    top: 50%;
-    color: #cdcbcd;
-  }
-  
-  .owl-nav i {
-    font-size: 52px;
-  }
-  
-  .owl-nav .owl-prev {
-    left: -30px;
-  }
-  
-  .owl-nav .owl-next {
-    right: -30px;
-  }
 
 @media screen and (max-width: 768px) {
     .logo>img {
@@ -1029,4 +997,44 @@ header {
     }
 }
 
+.owl-item {
+    display: flex;
+    justify-content: space-around;
+  }
   
+  .owl-stage {
+    padding: 20px;
+  }
+  
+  
+  .carousel-wrap {
+    margin: 0px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+  }
+  
+  .owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  /* end fix */
+  .owl-nav>div {
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+  }
+  
+  .owl-nav i {
+    font-size: 52px;
+  }
+  
+  .owl-nav .owl-prev {
+    left: -30px;
+  }
+  
+  .owl-nav .owl-next {
+    right: -30px;
+  }
