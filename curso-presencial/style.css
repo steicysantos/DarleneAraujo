@@ -146,24 +146,13 @@ header {
     display: flex;
     flex-direction: row;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-
-.logo {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    height: 100%;
-    width: 100%;
+    justify-content: center;
 }
 
-.logo>img {
-    margin: 0;
-    width: 20%;
-    margin-left: 10rem;
+header>img{
+    height: 115%;
 }
-
 
 
 @media screen and (max-width: 768px) {
@@ -610,18 +599,22 @@ header {
     background: linear-gradient(270deg, rgba(153, 126, 117, 0.664) 0%, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 1) 100%);
 }
 .banner>h1{
-    font-size: 100px;
+    position: absolute;
+    font-size: 90px;
     color: white;
     text-align: end;
     width: 38%;
     letter-spacing: 5px;
+    right: 50px;
+    z-index: 0;
 }
 
-.slide>img{
-    position: absolute;
-    transform: scale(0.25);
-    top: -1201px;
-    right: -500px;
+.banner>img{
+    height: 70vh !important;
+    width: auto !important;
+    align-self: center;
+    margin: auto;
+    z-index: 5;
 }
 
 .texts-slide>h1{
@@ -1015,7 +1008,7 @@ header {
     }
     .banner>h1{
         display: none;
-        font-size: 0px;
+        position: absolute;
         color: white;
         text-align: end;
         letter-spacing: 5px;
@@ -1050,6 +1043,10 @@ header {
         line-height: 28px;
     }
     
+    .banner>img{
+        display: none;
+    }
+
     .texts-slide{
         display: flex;
         flex-direction: column;
