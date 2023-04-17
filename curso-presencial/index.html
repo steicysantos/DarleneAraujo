@@ -153,7 +153,85 @@
     </div>
   </div>  -->
 
-  <div class="slider">
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="slide">
+        <div class="banner">
+          <div class="texts-slide">
+            <h1>Curso Nail Designer</h1>
+            <h2>APERFEIÇOAMENTO</h2>
+            <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
+              <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
+              <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada
+              entre
+              outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
+            </h3>
+            <button class="btn-slide">SAIBA MAIS</button>
+          </div>
+          <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
+        </div>
+        <img src="/assets/darlene-curso.png" alt="">
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slide">
+        <div class="banner">
+          <div class="texts-slide">
+            <h1>Curso Nail Designer</h1>
+            <h2>MANUTENÇÃO</h2>
+            <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
+              <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
+              <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada
+              entre
+              outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
+            </h3>
+            <button class="btn-slide">SAIBA MAIS</button>
+          </div>
+          <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
+        </div>
+        <img src="/assets/darlene-curso.png" alt="">
+      </div>
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slide">
+        <div class="banner">
+          <div class="texts-slide">
+            <h1>Curso Nail Designer</h1>
+            <h2>INICIANTE BÁSICO</h2>
+            <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
+              <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
+              <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada
+              entre
+              outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
+            </h3>
+            <button class="btn-slide">SAIBA MAIS</button>
+          </div>
+          <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
+        </div>
+        <img src="/assets/darlene-curso.png" alt="">
+      </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  </div>
+
+
+  <!-- <div class="slider">
     <div class="slides">
 
       <div class="slide">
@@ -215,7 +293,7 @@
       <span class="dot"></span>
       <span class="dot"></span>
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -230,8 +308,8 @@
         <h2>Conteúdo dos cursos: </h2>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="false" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               Iniciante Básico
             </button>
           </h2>
@@ -402,33 +480,25 @@
   <script src='script.js'></script>
 
   <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    let slideIndex = 0;
+    showSlides();
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
+    function showSlides() {
       let i;
       let slides = document.getElementsByClassName("mySlides");
       let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
-
     // console.log("Nathan")
 
     $('.owl-one').owlCarousel({

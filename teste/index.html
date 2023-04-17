@@ -1,115 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 <body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="slide">
-              <div class="banner">
-                <div class="texts-slide">
-                  <h1>Curso Nail Designer</h1>
-                  <h2>APERFEIÇOAMENTO</h2>
-                  <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
-                    <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
-                    <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada entre
-                    outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
-                  </h3>
-                  <button class="btn-slide">SAIBA MAIS</button>
-                </div>
-                <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
-              </div>
-              <img src="/assets/darlene-curso.png" alt="">
-            </div>  
-        </div>
-        <div class="mySlides fade">
-          <div class="slide">
-              <div class="banner">
-                <div class="texts-slide">
-                  <h1>Curso Nail Designer</h1>
-                  <h2>MANUTENÇÃO</h2>
-                  <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
-                    <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
-                    <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada entre
-                    outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
-                  </h3>
-                  <button class="btn-slide">SAIBA MAIS</button>
-                </div>
-                <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
-              </div>
-              <img src="/assets/darlene-curso.png" alt="">
-            </div>
-        </div>
-        <div class="mySlides fade">
-          <div class="slide">
-              <div class="banner">
-                <div class="texts-slide">
-                  <h1>Curso Nail Designer</h1>
-                  <h2>INICIANTE BÁSICO</h2>
-                  <h3>O aperfeiçoamento é para você melhorar ainda mais o seu trabalho, focando no acabamento impecável.
-                    <br>Nesse curso você vai aperfeiçoar os formatos quadrada, almond, bailarina e estileto.
-                    <br>5 Nails arts- francesa reversa, madrepérola encapsulada, glitter encapsulado , francesa desenhada entre
-                    outras gosto sempre de deixar as alunas decidirem as decorações que vão reproduzir.
-                  </h3>
-                  <button class="btn-slide">SAIBA MAIS</button>
-                </div>
-                <h1>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE<br>DARLENE</h1>
-              </div>
-              <img src="/assets/darlene-curso.png" alt="">
-            </div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(0)"></span>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-      </div>
-      <script>
-        let slideIndex = 0;
-        let timeoutId = null;
-        const slides = document.getElementsByClassName("mySlides");
-        const dots = document.getElementsByClassName("dot");
-        
-        showSlides();
-        function currentSlide(index) {
-             slideIndex = index;
-             showSlides();
-        }
-       function plusSlides(step) {
-          
-          if(step < 0) {
-              slideIndex -= 2;
-              
-              if(slideIndex < 0) {
-                slideIndex = slides.length - 1;
-              }
-          }
-          
-          showSlides();
-       }
-        function showSlides() {
-          for(let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            dots[i].classList.remove('active');
-          }
-          slideIndex++;
-          if(slideIndex > slides.length) {
-            slideIndex = 1
-          }
-          slides[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].classList.add('active');
-           if(timeoutId) {
-              clearTimeout(timeoutId);
-           }
-          timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
-        }
-      </script>
+  <div class="swiffy-slider">
+    <ul class="slider-container">
+        <li><img src="https://source.unsplash.com/49b9l_29ceA/1600x900" style="max-width: 100%;height: auto;"></li>
+        <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900" style="max-width: 100%;height: auto;"></li>
+        <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900" style="max-width: 100%;height: auto;"></li>
+    </ul>
+
+    <button type="button" class="slider-nav"></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
+
+    <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+    </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+    $('.slider').each(function() {
+  var $this = $(this);
+  var $group = $this.find('.slide_group');
+  var $slides = $this.find('.slide');
+  var bulletArray = [];
+  var currentIndex = 0;
+  var timeout;
+  
+  function move(newIndex) {
+    var animateLeft, slideLeft;a
+    
+    advance();
+    
+    if ($group.is(':animated') || currentIndex === newIndex) {
+      return;
+    }
+    
+    bulletArray[currentIndex].removeClass('active');
+    bulletArray[newIndex].addClass('active');
+    
+    if (newIndex > currentIndex) {
+      slideLeft = '100%';
+      animateLeft = '-100%';
+    } else {
+      slideLeft = '-100%';
+      animateLeft = '100%';
+    }
+    
+    $slides.eq(newIndex).css({
+      display: 'block',
+      left: slideLeft
+    });
+    $group.animate({
+      left: animateLeft
+    }, function() {
+      $slides.eq(currentIndex).css({
+        display: 'none'
+      });
+      $slides.eq(newIndex).css({
+        left: 0
+      });
+      $group.css({
+        left: 0
+      });
+      currentIndex = newIndex;
+    });
+  }
+  
+  function advance() {
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      if (currentIndex < ($slides.length - 1)) {
+        move(currentIndex + 1);
+      } else {
+        move(0);
+      }
+    }, 4000);
+  }
+  
+  $('.next_btn').on('click', function() {
+    if (currentIndex < ($slides.length - 1)) {
+      move(currentIndex + 1);
+    } else {
+      move(0);
+    }
+  });
+  
+  $('.previous_btn').on('click', function() {
+    if (currentIndex !== 0) {
+      move(currentIndex - 1);
+    } else {
+      move(3);
+    }
+  });
+  
+  $.each($slides, function(index) {
+    var $button = $('<a class="slide_btn">&bull;</a>');
+    
+    if (index === currentIndex) {
+      $button.addClass('active');
+    }
+    $button.on('click', function() {
+      move(index);
+    }).appendTo('.slide_buttons');
+    bulletArray.push($button);
+  });
+  
+  advance();
+});
+  </script>
 </body>
 </html>
