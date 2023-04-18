@@ -273,8 +273,8 @@ header>img{
     position: absolute;
     top:50%;
     transform: translateY(-50%);
-    color: #ffffff;
-    background: #890873;
+    color: var(--color5);
+    background: transparent;
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -287,7 +287,7 @@ header>img{
 
 .containerproje #prev:hover, 
 .containerproje #next:hover{
-    background: #ee7bd3;
+    background:transparent;
 }
 .containerproje #prev{
     left: 20px;
@@ -321,6 +321,11 @@ header>img{
         height: 10%;
     
     }
+
+    .containerproje .slider .slide{
+      min-height: 80vh;
+      max-height: 80vh;
+  }
 }
 
 .slider {
