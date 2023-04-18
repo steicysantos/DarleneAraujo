@@ -112,6 +112,9 @@ body {
     overflow-x: hidden;
 }
 
+a{
+  text-decoration: none;
+}
 :root {
     --color1: #FFFF;
     --color2: #D4CDC8;
@@ -294,7 +297,9 @@ header>img{
     right: 20px;
 }
 
-
+.containerproje .slider .slide {
+  padding: 0;
+}
 
 @media(max-width: 500px){
     .containerproje #prev{
@@ -416,6 +421,28 @@ header>img{
   display: flex;
   flex-direction: column;
   max-width: 60%;
+}
+
+.btn-slide {
+  background: var(--color5);
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600; 
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 3px;
+  border: none;
+  width: fit-content;
+  align-self: flex-end;
+  margin: 2.5rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -608,10 +635,6 @@ header>img{
   justify-content: space-around;
 }
 
-.owl-stage {
-  padding: 20px;
-}
-
 
 .carousel-wrap {
   margin: 0px auto;
@@ -655,7 +678,7 @@ header>img{
   border-radius: 1rem;
   background-color: #fff;
   color: #000;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
