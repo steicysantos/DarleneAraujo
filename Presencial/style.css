@@ -529,12 +529,15 @@ header>img{
   width: 700px;
 }
 
+
 .accordion>h2 {
   color: var(--color5);
   margin-bottom: 1rem;
   font-family: 'Newsreader', serif;
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
 }
 
 .accordion-item {
@@ -546,14 +549,14 @@ header>img{
   padding: 10px;
   cursor: pointer;
   font-family: 'Newsreader', serif;
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 300;
   color: var(--color1);
 }
 
-.accordion-header:hover {
+/* .accordion-header:hover {
   background-color: var(--color3);
-}
+} */
 
 .accordion-content {
   display: none;
@@ -571,8 +574,26 @@ header>img{
 }
 
 .accordion-button{
-  background-color: var(--color1)
+  background-color: var(--color1);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
 
+.accordion-button:not(.collapsed){
+  color: var(--color1);
+  background-color: var(--color3);
+  box-shadow: none;
+
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button::after{
+  color: var(--color6);
+  
 }
 
 @media only screen and (max-width: 767px) {
@@ -773,7 +794,7 @@ header>img{
 @media only screen and (max-width: 768px) {
   .benefits-course {
       background: linear-gradient(0deg, var(--color5) 0%, var(--color3) 50%, var(--color2) 100%);
-      height: 60%;
+      height: 70%;
   }
 
   .benefits-container {
@@ -829,7 +850,12 @@ header>img{
   text-align: left;
   font: bold 16px 'Montserrat', sans-serif;
   padding: 25px 15px;
-  margin-top: 5rem;
+  margin-top: 0; 
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .footer-distributed .footer-left,
@@ -841,7 +867,7 @@ header>img{
 
 
 .footer-distributed .footer-left {
-  width: 40%;
+  width: 30%;
 }
 
 
@@ -976,10 +1002,16 @@ header>img{
   gap: 30px;
 }
 
+/* If you don't want the footer to be responsive, remove these media queries */
+
 @media (max-width: 880px) {
 
   .footer-distributed{
     font: bold 14px sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .footer-distributed .footer-left,
