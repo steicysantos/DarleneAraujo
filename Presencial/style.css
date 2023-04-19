@@ -154,13 +154,16 @@ header {
     justify-content: center;
 }
 
-header>img{
-    height: 115%;
+header > a {
+  height: 100%;
 }
 
+.logo-presencial{
+  height: 125%;
+}
 
 @media screen and (max-width: 768px) {
-    .logo>img {
+    .logo-presencial{
         margin-left: 0;
     }
 
@@ -321,11 +324,7 @@ header>img{
         height: 10%;
     
     }
-
-    .containerproje .slider .slide{
-      min-height: 80vh;
-      max-height: 80vh;
-  }
+  
 }
 
 .slider {
@@ -587,6 +586,10 @@ header>img{
 /* .accordion-header:hover {
   background-color: var(--color3);
 } */
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23795B4C'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
 
 .accordion-content {
   display: none;
@@ -1059,4 +1062,24 @@ header>img{
     margin-left: 0;
   }
 
+}
+
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.copyright > h2{
+  margin-top: 1rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.image-connect{
+  width: 110px;
+  margin: 1rem;
+  cursor: pointer;
 }
